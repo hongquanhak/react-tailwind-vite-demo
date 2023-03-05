@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-notoSan text-[16px] leading-loose;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-1080 mx-auto md:mx-[20px];
+  }
+  .btn {
+    @apply text-white text-center p-[27.5px] text-[18px] w-[200px] leading-none block hover:opacity-70;
+  }
+  .main-title {
+    @apply font-inter text-[52px] font-medium leading-none mb-[14px] text-center;
+  }
+  .sub-title {
+    @apply text-[12px] leading-none text-center block;
+  }
+  .title-under {
+    @apply text-[40px] font-bold leading-none mb-[92px] relative text-center after:absolute after:-bottom-[40px] after:left-1/2 after:-translate-x-1/2 after:w-[80px] after:h-[8px] after:bg-yellowOne after:rounded-md md:text-[24px] md:leading-[1.7] md:mb-[85px] md:after:-bottom-5 md:after:w-10 md:after:h-1;
+  }
+  .btn-main {
+    @apply block w-[612px] m-auto py-[27px] rounded-[50px] bg-yellowOne text-white text-[18px] font-bold leading-none text-center hover:text-yellowOne hover:bg-white hover:border hover:border-solid hover:border-yellowOne;
+  }
+}
